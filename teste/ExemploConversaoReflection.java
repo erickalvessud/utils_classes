@@ -60,9 +60,9 @@ public class ExemploConversaoReflection {
     }
     
     public static void main(String[] args) {
-        ParametroSistemaBean p = new ParametroSistemaBean();
+        ExemploConversaoReflection e = new ExemploConversaoReflection();
         
-		Boolean i = p.buscaParametroSistemaPelaSigla("", Boolean.class);
+		Boolean i = e.converterValorParametro("", Boolean.class);
 		if (i == null) {
 			System.out.println("Problemas na conversão");
 			return;
